@@ -3,7 +3,7 @@
 
 void	print_rec(int a)
 {
-	if (a == 31)
+	if (a >= 31)
 		return ;
     printf("%d\n", a);
     print_rec(++a);

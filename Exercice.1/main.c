@@ -3,7 +3,7 @@
 
 int	multiply_rec(int a, int b)
 {
-	if (a == 0)
+	if (a == 0 || b == 0)
 		return 0;
 	a--;
 	return b + multiply_rec(a, b);
