@@ -14,7 +14,7 @@ void towers(int n, char frompeg, char topeg, char auxpeg)
 
 int main()
 {
-    int n = 4;
+    int n = 1;
     towers(n, 'A', 'C', 'B');
     return 0;
 }

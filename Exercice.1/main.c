@@ -1,5 +1,6 @@
 #include <string.h>
 #include <stdio.h>
+#include <stdlib.h>
 
 int	multiply_rec(int a, int b)
 {
@@ -9,14 +10,10 @@ int	multiply_rec(int a, int b)
 	return b + multiply_rec(a, b);
 }
 
-int main ()
+int main (int argc, char **argv)
 {
-	int a;
-	int	b;
-
-	a = 3;
-	b = 4;
-	printf("%d * %d = %d\n", a, b, multiply_rec(a, b));
-
+	if (argc == 3)
+		printf("%d * %d = %d\n", atoi(argv[1]), atoi(argv[2]), multiply_rec(atoi(argv[1]), atoi(argv[2])));
+	printf("\n");
 	return (0);
 }

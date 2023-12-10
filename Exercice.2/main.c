@@ -5,8 +5,8 @@ void	print_rec(int a)
 {
 	if (a >= 31)
 		return ;
+    print_rec(a + 1);
     printf("%d\n", a);
-    print_rec(++a);
 }
 
 void    print_rec_sub(void)
